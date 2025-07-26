@@ -9,7 +9,8 @@ dotenv.config();
 const app = express();
 app.use(cors({
   origin: [
-    'http://localhost:5173',                      // dev
+    'http://localhost:5173',  // dev
+    'http://localhost:8080',  // custom
     'https://srisaiembroidery.vercel.app'            // production (replace this)
   ],
   credentials: true
